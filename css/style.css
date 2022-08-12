@@ -363,13 +363,19 @@ ul {
 }
 
 .get-in-touch {
-    border: 1px solid var(--thm-black);
-    color: var(--thm-black);
+    border: 1px solid var(--thm-primary);
+    color: var(--thm-primary);
     padding: 8px 30px;
 }
 .get-in-touch:hover{
    background:var(--thm-primary);  
    color: #fff;
+}
+
+.lasting-latch-sec .get-in-touch {
+    border: 1px solid var(--thm-black);
+    color: var(--thm-black);
+    padding: 8px 30px;
 }
 
 
