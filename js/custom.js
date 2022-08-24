@@ -1,9 +1,7 @@
+
 (function ($) {
   "use strict";
-
-
-
-
+  
     
 	//Pricing Tabs
 	if($('.pricing-tabs').length){
@@ -39,51 +37,7 @@
 
     }
 
-
-    // Popular Causes Progress Bar
-	if ($('.count-bar').length) {
-		$('.count-bar').appear(function(){
-			var el = $(this);
-			var percent = el.data('percent');
-			$(el).css('width',percent).addClass('counted');
-		},{accY: -50});
-
-	}
-    
-    //Fact Counter + Text Count
-    if ($(".count-box").length) {
-        $(".count-box").appear(
-            function () {
-                var $t = $(this),
-                    n = $t.find(".count-text").attr("data-stop"),
-                    r = parseInt($t.find(".count-text").attr("data-speed"), 10);
-
-                if (!$t.hasClass("counted")) {
-                    $t.addClass("counted");
-                    $({
-                        countNum: $t.find(".count-text").text(),
-                    }).animate(
-                        {
-                            countNum: n,
-                        },
-                        {
-                            duration: r,
-                            easing: "linear",
-                            step: function () {
-                                $t.find(".count-text").text(
-                                    Math.floor(this.countNum)
-                                );
-                            },
-                            complete: function () {
-                                $t.find(".count-text").text(this.countNum);
-                            },
-                        }
-                    );
-                }
-            },
-            { accY: 0 }
-        );
-    }
+  
   
     // Accrodion
     if ($(".accrodion-grp").length) {
@@ -119,42 +73,6 @@
     }
     
     
-    
-    // Testimonial One Carousel
-    if ($(".expertise__carousel").length) {
-        $(".expertise__carousel").owlCarousel({
-            loop: true,
-            margin: 30,
-            nav: true,
-            smartSpeed: 500,
-            autoHeight: false,
-            autoplay: true,
-            dots: false,
-            autoplayTimeout: 10000,
-            navText: [
-                ' <i class="fas fa-long-arrow-alt-right"></i>',
-                '<i class="fas fa-long-arrow-alt-left"></i>',
-            ],
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 1,
-                },
-                800: {
-                    items: 2,
-                },
-                1024: {
-                    items: 2,
-                },
-                1200: {
-                    items: 2,
-                },
-            },
-        });
-    }
-    
 
   if ($(".scroll-to-target").length) {
     $(".scroll-to-target").on("click", function () {
@@ -169,6 +87,7 @@
       return false;
     });
   }
+  
 
   if ($(".contact-form-validated").length) {
     $(".contact-form-validated").validate({
@@ -683,8 +602,5 @@ function projectMasonaryLayout() {
 
 
 
-
-
-
-
 })(jQuery);
+

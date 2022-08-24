@@ -2537,7 +2537,7 @@ ul {
 /*--------------------------------------------------------------
 # Financial Advice
 --------------------------------------------------------------*/
-.consulting-advice {
+#portfolio{
     position: relative;
     display: block;
     padding: 60px 0 60px;
@@ -2561,18 +2561,18 @@ ul {
     margin: 0;
 }
 
-.consulting-advice .thm-btn:hover{
+#portfolio .thm-btn:hover{
    background: var(--thm-black);
     color: #fff;
 }
-.consulting-advice .thm-btn:hover:before{
+#portfolio  .thm-btn:hover:before{
     width: 100%;
 }
 
-.consulting-advice .thm-btn{
+#portfolio  .thm-btn{
     position: relative;
 }
-.consulting-advice .thm-btn:before {
+#portfolio  .thm-btn:before {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2647,7 +2647,7 @@ ul {
    width: 100%;
     display: block;
 }
-.consulting-advice .brand-one__title {
+#portfolio .brand-one__title {
     color: var(--thm-black);;
 }
 .financial-advice__box .tab-btns .tab-btn.active-btn span,
