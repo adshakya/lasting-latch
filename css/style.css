@@ -358,8 +358,16 @@ ul {
     transition: 0.4s;
 }
 
-.stricky-header .main-menu-wrapper__logo{
+.stricky-header .main-menu-wrapper__logo {
     width: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.stricky-header .main-menu-wrapper__logo img{
+    background-color: var(--thm-black);
+    border-radius: 50%;
 }
 
 .get-in-touch {
