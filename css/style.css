@@ -2647,6 +2647,9 @@ ul {
    width: 100%;
     display: block;
 }
+.portfolio-content__img img{
+    width: 100%;
+}
 #portfolio .brand-one__title {
     color: var(--thm-black);;
 }
