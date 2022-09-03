@@ -395,8 +395,16 @@ ul {
     top: 0;
 }
 
-section#portfolio-page {
+section#portfolio-page,#single-page,#products-page {
     margin: 120px 0 40px;
+}
+section#portfolio-page{
+    padding-top: 50px;
+}
+
+#products-page{
+    margin-top: 80px;
+    padding-bottom: 5px;
 }
 
 .stricky-header .main-menu-wrapper__logo img{
@@ -404,12 +412,12 @@ section#portfolio-page {
     border-radius: 50%;
 }
 
-.get-in-touch {
+.main-menu .main-menu__list>li>.get-in-touch {
     border: 1px solid var(--thm-primary);
     color: var(--thm-primary);
     padding: 8px 30px;
 }
-.get-in-touch:hover{
+.main-menu .main-menu__list>li>.get-in-touch:hover{
    background:var(--thm-primary);  
    color: #fff;
 }
@@ -418,6 +426,15 @@ section#portfolio-page {
     border: 1px solid var(--thm-black);
     color: var(--thm-black);
     padding: 8px 30px;
+}
+
+.main-menu .main-menu__list li:last-child{
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.main-menu .main-menu__list>li>.get-in-touch::before{
+    display: none;
 }
 
 
@@ -2694,9 +2711,17 @@ section#portfolio-page {
     object-fit: cover;
     width: 100%;
 }
-.inner-page-banner h2{
+.inner-page-banner h1,.inner-page h1{
     color: #fff;
     font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.inner-page h1{
+    color: var(--thm-black);
+}
+#products-page .row{
+    margin-bottom: 40px;
 }
 .inner-page-banner{
     position: relative;
